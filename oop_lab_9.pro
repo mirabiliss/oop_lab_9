@@ -16,11 +16,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    array.cpp \
+    base.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    simplearray.cpp \
+    sortedarray.cpp
 
 HEADERS += \
-    mainwindow.h
+    array.h \
+    base.h \
+    mainwindow.h \
+    simplearray.h \
+    sortedarray.h
 
 FORMS += \
     mainwindow.ui

@@ -1,20 +1,17 @@
 #include "sortedarray.h"
 
 SortedArray::SortedArray()
-    :Base()
-    ,SimpleArray()
+    :Array()
 {
 }
 
 SortedArray::SortedArray(int elem)
-    :Base()
-    ,SimpleArray(elem)
+    :Array(elem)
 {
 }
 
 SortedArray::SortedArray(SortedArray &other)
-    :Base()
-    ,SimpleArray(other)
+    :Array(other)
 {
 }
 
@@ -48,7 +45,7 @@ void SortedArray::addElem(double val)
     this->array = new double[this->getElements()];
 
     int i = 0;
-    while (other->array[i] < val){
+    while (other->array[i] < val && i != other->getElements()){
         this->array[i] = other->array[i];
         i++;
     }

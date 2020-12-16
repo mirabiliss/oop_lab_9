@@ -36,4 +36,5 @@ private:
     SimpleArray* pSimple;
     SortedArray* pSorted;
 };
+
 #endif // MAINWINDOW_H

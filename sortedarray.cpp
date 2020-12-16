@@ -37,7 +37,6 @@ void SortedArray::addElem(double val)
     }
     SortedArray* other = new SortedArray(this->getElements());
     for (int i = 0; i < this->getElements(); i++){
-        qDebug() << i;
         other->array[i] = this->array[i];
     }
     delete this->array;
@@ -51,7 +50,7 @@ void SortedArray::addElem(double val)
     }
     this->array[i] = val;
     if (i < this->getElements()) {
-        for (int j = i; j < this->getElements(); j++){
+        for (int j = i + 1; j < this->getElements(); j++){
             this->array[j] = other->array[j - 1];
         }
     }
